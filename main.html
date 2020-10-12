@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Кожевникова Дарья M33051</title>
+    <meta charset="utf-8"> 
+    
+    <meta name="keywords" content="Визитка, резюме, java, c++, начинающий программист, программирование">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href=#about>Обо мне</a></li>
+                <li><a href=#skills>Мои навыки</a></li>
+                <li><a href="https://github.com/flyvie">GitHub</a></li>
+                <li><a href="https://hh.ru/resume/b0e4b94eff084b3eac0039ed1f3955475a7a31">HeadHunter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1>Обо мне</h1>
+            <article>
+                <img src="img/redhead-women-code.jpeg" alt="Атмосферное фото с ноутбуком">
+                <blockquote>
+                    <p>Иногда лучше остаться спать дома в понедельник, чем провести всю неделю в отладке написанного в понедельник кода.</p>
+                    <cite>Christopher Thompson</cite>
+                </blockquote>  
+            </article>
+            <p>Змеи могут впадать в спячку при неблагоприятных условиях. Надеюсь, в следующей жизни я буду змеей.</p>
+            <pre>
+                ▄▄▀█▄
+                ▀▀▀██
+                ░▄██▀
+                ▀██▄█▀██▄▄███▀█▄
+            </pre>
+
+            <p>Если я хочу добиться в чем-либо успеха, то следую формуле: <b>результат</b> = (время<sub>обучения</sub>+время<sub>работы</sub>)∙упорство<sup>2</sup></p>
+        </section>
+
+        <section id="skills">
+            <h2>Мои навыки</h2>
+            <p>Основное, что определяет специалиста - это его знания и умения. И <ins>в первую очередь</ins> программист должен владеть языками, на которых будет писать код.</p>
+            <h4>Языки программирования</h4>
+            <ol>
+                <li>Java</li>
+                <li>C++</li>
+                <li>C</li>
+            </ol>
+            <p>Но навыки, не касающиеся написания кода и технических деталей, нередко оказываются не менее важными, чем уровень как разработчика:</p>
+            <h4>Гибкие навыки</h4>
+            <dl>
+                <dt>Умение находить информацию</dt>
+                <dd>Программист <em>не может</em> знать всё. Но хороший программист <em>может</em> разобраться почти во всём - только предоставьте ему доступ в интернет.</dd>
+                <dt>Чтение чужого кода</dt>
+                <dd>Никто не пишет большие проекты в одиночку. Понимать, что делает твой товарищ - важное качество.</dd>
+                <dt>Работа в команде</dt>
+                <dd>Команда должна дискутировать и приходить к лучшему решению. Члены команды должны уметь это делать вежливо и конструктивно.</dd>
+            </dl>
+        </section>
+
+        <aside id="links">
+            <h3>Галерея достижений</h3>
+
+            <section id="code">
+                <p> В <time datetime="2019">прошлом году</time> я работала над приложением, которое помогало выбрать пользователю наиболее подходящий под его запросы ресторан. Одним из небольших кусочков приложения был расчёт расстояния в метрах от местоположения пользователя до точки назначения. Я нахожу его довольно красивым и интересным, так как тут пришлось учитывать то, что расчёт ведется по <strong>поверхности Земли</strong>, а не в двумерной системе координат.</p>
+                <code>
+                    <pre>
+    //The earth's radius, in meters.
+    private static final double EARTH_RADIUS = 6371009;
+
+    private static double hav(double x) {
+        double sinHalf = sin(x * 0.5);
+        return sinHalf * sinHalf;
+    }
+
+    private static double arcHav(double x) { // арк.гаверсинус
+        return 2 * asin(sqrt(x));
+    }
+
+    public static double getDistance(Point userPoint, Point restaurantPoint) {
+        double xFirstRad = toRadians(userPoint.getLatitude());
+        double yFirstRad = toRadians(userPoint.getLongitude());
+        double xSecondRad = toRadians(restaurantPoint.getLatitude());
+        double ySecondRad = toRadians(restaurantPoint.getLongitude());
+
+        double havDistance = hav(xFirstRad - xSecondRad) +
+                hav(yFirstRad - ySecondRad) * cos(xFirstRad) * cos(xSecondRad);
+        double distanceRadians = arcHav(havDistance);
+
+        return distanceRadians * EARTH_RADIUS; // in meters
+    }
+                    </pre>
+                </code>
+            </section>
+
+            <section id ="hackathon">
+                <p>Также, в <time datetime="2019-09-27">прошлом году</time> я участвовала в <b>VK Hackathon</b>. Фотографии с участия можно посмотреть <a href="https://vk.com/wall173273615_12752">вот здесь.</a></p>
+            </section>
+        </aside>
+
+    </main>
+
+    <footer>
+        <section id="contacts">
+            <p>Чтобы связаться со мной, вы можете написать мне на <a href="mailto:darijapond@gmail.com">почту</a>.</p>
+        </section>
+    </footer>
+
+</body>
+
+</html>
