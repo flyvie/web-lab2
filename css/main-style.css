@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,200;0,700;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,400;0,700;1,400&display=swap');
+
+body{
+    font-family: 'Cormorant Infant', serif;
+    font-size: large;
+}
+
+header{
+    background: linear-gradient(to bottom, #D68C45, white);
+    /*background-image: url(../img/background.jpg);*/
+
+}
+
+nav a{
+    text-decoration: none;
+    color:  #D68C45;
+}
+
+nav ul{
+    text-align: center;
+}
+
+nav li{
+    display: inline-block;
+    padding: 1% 7%;
+    margin: 1% 1% 2% 1%;
+    border-radius: 50%;
+    background-color: white;;
+    font-size: 150%;
+}
+
+article img{
+    width: 30%;
+    float: right;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+footer{
+    background: linear-gradient(to top, #D68C45, white);
+    padding: 1%;
+    text-align: center;
+}
+
+blockquote{
+    font-family: 'Marck Script', cursive;
+    text-align: center;;
+}
