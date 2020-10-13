@@ -8,14 +8,20 @@ body{
 }
 
 header{
-    background: linear-gradient(to bottom, #D68C45, white);
+    /*background: #D4C1EC;*/
     /*background-image: url(../img/background.jpg);*/
+    background: linear-gradient(to bottom, #D4C1EC, white);
 
+}
+
+a{
+    color: #736CED;
 }
 
 nav a{
     text-decoration: none;
-    color:  #D68C45;
+    color: #9F9FED;
+    font-weight: bold;
 }
 
 nav ul{
@@ -25,36 +31,80 @@ nav ul{
 nav li{
     display: inline-block;
     padding: 1% 7%;
-    margin: 1% 1% 2% 1%;
+    margin: 1% 1% 3% 1%;
     border-radius: 50%;
     background-color: white;;
-    font-size: 150%;
+    font-size: 130%;
 }
 
 article img{
-    width: 30%;
-    float: right;
+    width: 35%;
 }
 
 h1{
     text-align: center;
+    color: #9F9FED;
+}
+
+/*section{
+    background: linear-gradient(to top, #FEC5BB, white);
+}*/
+
+#about {
+   /* background: linear-gradient(to top, #FCD5CE, white); */
+    display: inline-block;
+    width: 70%;
+    padding: 1%;
+    text-indent: 40px;
+}
+
+#skills {
+   /* background: linear-gradient(to bottom, #FCD5CE, white); */
+    display: inline-block;
+    width: 70%;
+    padding: 1%;
+    text-indent: 40px;
+}
+
+#links{
+    display: inline-block;
+    padding: 1%;
+    background-color: #FEF9FF;
+    text-indent: 40px;
 }
 
 h2{
     text-align: center;
+    color: #9F9FED;
 }
 
 h3{
     text-align: center;
+    color: #736CED;
 }
 
+
 footer{
-    background: linear-gradient(to top, #D68C45, white);
+    background: linear-gradient(to top, #D4C1EC, white);
     padding: 1%;
     text-align: center;
+    font-weight: bolder;
 }
 
 blockquote{
+    text-indent: 0px;
     font-family: 'Marck Script', cursive;
-    text-align: center;;
+    text-align: center;
+    padding: 0% 2%;
+    border: solid;
+    border-color: #9F9FED;
 }
+
+pre{
+    text-indent: 0px;
+}
+
+li{
+    text-indent: 0px;
+}
+
