@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,200;0,700;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,400;0,700;1,400&display=swap');
 
@@ -44,6 +43,7 @@ article img{
 h1{
     text-align: center;
     color: #9F9FED;
+    text-transform: uppercase;
 }
 
 /*section{
@@ -76,13 +76,18 @@ h1{
 h2{
     text-align: center;
     color: #9F9FED;
+    text-transform: uppercase;
 }
 
 h3{
     text-align: center;
     color: #736CED;
+    font-size: 130%;
 }
 
+h4{
+    font-size: 115%;
+}
 
 footer{
     background: linear-gradient(to top, #D4C1EC, white);
@@ -96,8 +101,12 @@ blockquote{
     font-family: 'Marck Script', cursive;
     text-align: center;
     padding: 0% 2%;
-    border: solid;
+    border-style: outset;
     border-color: #9F9FED;
+}
+
+dt{
+    font-weight: bold;
 }
 
 pre{
